@@ -18,9 +18,9 @@ export default function Testimonials() {
           {items.map((item) => (
             <li
               key={item.author}
-              className="flex flex-col rounded-2xl border border-base-200 bg-base-100 p-6"
+              className="flex flex-col rounded-2xl border border-base-200 bg-base-100 p-6 transition hover:border-primary/40 hover:shadow-md"
             >
-              <div className="flex gap-0.5 text-primary">
+              <div className="flex gap-0.5 text-warning">
                 {Array.from({ length: 5 }).map((_, i) => (
                   <Star key={i} className="size-4 fill-current" />
                 ))}

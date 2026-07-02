@@ -32,6 +32,19 @@ const SECTION_ICONS = {
   troubleshooting: "LifeBuoy",
 }
 
+// Descripción corta por sección (para las cards del índice de docs)
+const SECTION_DESC = {
+  intro: "Qué es VibeFast y cómo usar estas docs.",
+  fundamentos: "Lo básico para arrancar sin experiencia.",
+  setup: "De cero a tu proyecto corriendo.",
+  tutoriales: "Qué construir cada semana del curso.",
+  features: "Cómo funciona cada pieza del stack.",
+  componentes: "Componentes y design system.",
+  recetas: "Playbooks completos para casos comunes.",
+  deploy: "Publica tu producto en producción.",
+  troubleshooting: "Cuando algo falla, empieza aquí.",
+}
+
 function stripOrderPrefix(name) {
   // "01-intro" → "intro", "semana-1-landing" se queda como está
   return name.replace(/^(\d+)[-_]/, "")
@@ -89,6 +102,7 @@ export function getDocsTree() {
         slug: sectionSlug,
         label: SECTION_LABELS[sectionSlug] || humanize(sectionSlug),
         icon: SECTION_ICONS[sectionSlug] || "Folder",
+        description: SECTION_DESC[sectionSlug] || null,
         order: getSectionOrder(sectionSlug),
         pages,
       }
