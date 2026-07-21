@@ -22,10 +22,9 @@ const config = {
   // Identidad del producto
   // -----------------------------------------------------------
   app: {
-    name: "VibeFast",
-    description:
-      "Boilerplate AI-native para founders. Construido para el Curso de Vibecoding Remotto.",
-    domain: "vibefast.dev", // sin https://, sin www
+    name: "Bee Finee",
+    description: "Membresía de bienestar integral para mejorar la salud de las personas.",
+    domain: "bee.finee.mx", // sin https://, sin www
     locale: "es", // "es" | "en"
     // URL pública: usa NEXT_PUBLIC_APP_URL en .env. En este config solo definimos el default.
     defaultUrl: "http://localhost:3000",
@@ -36,9 +35,9 @@ const config = {
   // -----------------------------------------------------------
   brand: {
     // Color primario en HEX. DaisyUI lo aplica como --color-primary via theme.
-    primary: "#7c3aed", // violet-600
+    primary: "#A78BD0",
     // Logo: puede ser texto o ruta a /public/logo.svg
-    logoText: "VibeFast",
+    logoText: "Bee Finee",
     logoSrc: null,
     // Estilo del bordeado global (DaisyUI usa esto para botones, cards)
     radius: "1rem",
@@ -107,12 +106,12 @@ const config = {
       { label: "Docs", href: "/docs" },
     ],
     hero: {
-      eyebrow: "Curso Vibecoding · Remotto × Startup Chihuahua",
-      title: "De 0 a producto AI-native en 11 semanas.",
+      eyebrow: "Tu beneficio wellness de finee",
+      title: "El beneficio wellness de tu seguro",
       subtitle:
-        "VibeFast es la plantilla del curso: Next.js, Supabase, OpenAI y MCP cableados desde el día 1. Tú extiendes con prompts en Cursor.",
-      cta: { label: "Únete al waitlist", href: "#waitlist" },
-      ctaSecondary: { label: "Ver docs", href: "/docs" },
+        "Conecta tu póliza de Gastos Médicos Mayores con nutriólogos, gimnasios, yoga, meditación y psicología para cuidar tu salud antes de necesitar el seguro.",
+      cta: { label: "Activa tus beneficios", href: "#waitlist" },
+      ctaSecondary: { label: "Cómo funciona", href: "#features" },
     },
     problem: {
       eyebrow: "El problema",
